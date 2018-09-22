@@ -1,0 +1,43 @@
+注意这是vim最好的配置方式，按照博客https://www.cnblogs.com/walk1314/p/6991043.html进行设置，然后在用 vim ~/.vimrc 粘贴下面的内容即可
+let Tlist_Auto_Highlight_Tag=1
+let Tlist_Auto_Open=1
+let Tlist_Auto_Update=1
+let Tlist_Display_Tag_Scope=1
+let Tlist_Exit_OnlyWindow=1
+let Tlist_Enable_Dold_Column=1
+let Tlist_File_Fold_Auto_Close=1
+let Tlist_Show_One_File=1
+let Tlist_Use_Right_Window=1
+let Tlist_Use_SingleClick=1
+nnoremap <silent> <F8> :TlistToggle<CR>
+
+filetype plugin on
+autocmd FileType python set omnifunc=pythoncomplete
+autocmd FileType javascrīpt set omnifunc=javascriptcomplete
+autocmd FileType html set omnifunc=htmlcomplete
+autocmd FileType css set omnifunc=csscomplete
+autocmd FileType xml set omnifunc=xmlcomplete
+autocmd FileType php set omnifunc=phpcomplete
+autocmd FileType c set omnifunc=ccomplete
+
+let g:pydiction_location='~/.vim/tools/pydiction/complete-dict'
+set autoindent
+set tabstop=4
+set shiftwidth=4
+set expandtab
+set number
+set lines=35 columns=118
+
+set helplang=cn 
+syntax enable
+syntax on 
+colorscheme desert
+set guifontwide=SimSun-ExtB:h12:cGB2312 
+set autoread 
+set history=400
+set confirm 
+set smartindent
+set guifont=Courier_new:h15:b:cDEFAULT
+
+
+
